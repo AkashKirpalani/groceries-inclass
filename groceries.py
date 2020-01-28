@@ -72,7 +72,7 @@ num = 1
 for department in departments_list:
     for item in sorted_department:
          print(item["department"])
-         print(department)
+          print(department)
         compare = item["department"].capitalize()
         if (compare == department):
             num = num + 1

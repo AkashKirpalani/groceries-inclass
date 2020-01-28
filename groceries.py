@@ -68,18 +68,15 @@ for department in department_list:
     department = department.capitalize()
     departments_list.append(department)
 
-num = 1
+num = 0
 for department in departments_list:
+    print(department)
     for item in sorted_department:
-         print(item["department"])
-          print(department)
-        compare = item["department"].capitalize()
-        if (compare == department):
+         compare = item["department"].capitalize()
+         if (compare == department):
             num = num + 1
-        else:
-            break
     print("+", department, num, "product")
-    num = 1
+    num = 0
 
 
 #--------------

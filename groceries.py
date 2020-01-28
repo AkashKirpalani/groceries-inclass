@@ -75,7 +75,11 @@ for department in departments_list:
          compare = item["department"].capitalize()
          if (compare == department):
             num = num + 1
-    print("+", department, num, "product")
+    print("+", department,  "(", num, "", end = '')
+    if(num > 1): 
+        print ("products)") 
+    else: 
+        print("product)")
     num = 0
 
 
